@@ -9,6 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove=".template.config\**" />
+    <None Remove=".template.config\**" />
+    <None Remove="MyTemplate.vstemplate" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="9.0.0" />
     <PackageReference Include="MudBlazor" Version="8.*" />

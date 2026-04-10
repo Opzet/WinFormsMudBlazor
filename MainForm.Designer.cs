@@ -1,4 +1,4 @@
-﻿namespace $safeprojectname$
+﻿namespace WinFormsMudBlazor
 {
     partial class MainForm
     {
@@ -50,7 +50,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "$safeprojectname$";
+            Text = "WinFormsMudBlazor";
             ResumeLayout(false);
         }
 

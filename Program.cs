@@ -1,4 +1,4 @@
-namespace $safeprojectname$
+namespace WinFormsMudBlazor
 {
     internal static class Program
     {

@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Components.WebView.WindowsForms;
 using Microsoft.Extensions.DependencyInjection;
 using MudBlazor.Services;
-using $safeprojectname$.Components.Layout;
 
-namespace $safeprojectname$
+namespace WinFormsMudBlazor
 {
     public partial class MainForm : Form
     {

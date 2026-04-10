@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace $safeprojectname$
+namespace WinFormsMudBlazor
 {
     [ComVisible(true)]
     public class WinFormInterop(MainForm form)

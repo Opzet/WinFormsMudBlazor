@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "David V",
+  "classifications": ["WinForms", "Blazor", "MudBlazor", ".NET"],
+  "name": "WinForms MudBlazor Hybrid App",
+  "identity": "WinFormsMudBlazor.CSharp",
+  "shortName": "winformsmud",
+  "sourceName": "WinFormsMudBlazor",
+  "preferNameDirectory": true,
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "primaryOutputs": [
+    { "path": "WinFormsMudBlazor.csproj" }
+  ],
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "datatype": "choice",
+      "description": "Target .NET version",
+      "choices": [
+        { "choice": "net9.0-windows", "description": ".NET 9 (Windows)" }
+      ],
+      "replaces": "net9.0-windows",
+      "defaultValue": "net9.0-windows"
+    },
+    "useDarkDefault": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "false",
+      "description": "Start with dark theme enabled"
+    }
+  },
+  "postActions": [
+    {
+      "condition": "(!disableRestore)",
+      "description": "Restore NuGet packages",
+      "manualInstructions": [
+        { "text": "Run 'dotnet restore'" }
+      ],
+      "actionId": "E3E4B30B-4309-4B0D-8572-65F28D2C57F6"
+    }
+  ]
+}
